@@ -1,0 +1,7 @@
+-batch 
+-create axi_color_space 
+-ver 1.00.a 
+-dir "C:\sam_work\EDK_projects\14_7\zybo_video_demo" 
+-lang vhdl 
+-bus axi4lite s 
+-xps 

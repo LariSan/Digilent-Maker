@@ -1,0 +1,37 @@
+##############################################################################
+## Filename:          E:\Atlys\Atlys_13_3_vdma_axi_dvi\pcores/axi_hdmi_v1_00_a/data/axi_hdmi_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue Nov 22 14:33:20 2011 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib axi_hdmi_v1_00_a DRAM16XN verilog
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib axi_hdmi_v1_00_a serdes_1_to_5_diff_data verilog
+lib axi_hdmi_v1_00_a phsaligner verilog
+lib axi_hdmi_v1_00_a chnlbond verilog
+lib proc_common_v3_00_a counter_f vhdl
+lib axi_lite_ipif_v1_01_a address_decoder vhdl
+lib axi_hdmi_v1_00_a Video vhdl
+lib axi_hdmi_v1_00_a TMDSEncoder vhdl
+lib axi_hdmi_v1_00_a SerializerN_1 vhdl
+lib axi_hdmi_v1_00_a LocalRst vhdl
+lib axi_hdmi_v1_00_a decode verilog
+lib axi_lite_ipif_v1_01_a slave_attachment vhdl
+lib axi_hdmi_v1_00_a VideoTimingCtl vhdl
+lib axi_hdmi_v1_00_a twi_slave_rom vhdl
+lib axi_hdmi_v1_00_a twi_slave vhdl
+lib axi_hdmi_v1_00_a DVITransmitter vhdl
+lib axi_hdmi_v1_00_a data_dealign vhdl
+lib axi_hdmi_v1_00_a data_align vhdl
+lib axi_hdmi_v1_00_a clk_gen vhdl
+lib axi_hdmi_v1_00_a axi_hdmi_reg vhdl
+lib axi_hdmi_v1_00_a dvi_decoder verilog
+lib axi_lite_ipif_v1_01_a axi_lite_ipif vhdl
+lib axi_hdmi_v1_00_a hdmi_ddc vhdl
+lib axi_hdmi_v1_00_a axi_hdmi_transmitter vhdl
+lib axi_hdmi_v1_00_a axi_hdmi_reg_top vhdl
+lib axi_hdmi_v1_00_a axi_hdmi_receiver vhdl
+lib axi_hdmi_v1_00_a axi_hdmi vhdl

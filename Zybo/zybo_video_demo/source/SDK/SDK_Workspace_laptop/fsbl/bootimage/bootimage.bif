@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/fsbl/Debug/fsbl.elf
+	/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit
+	/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/filterdemo/Debug/filterdemo.elf
+}

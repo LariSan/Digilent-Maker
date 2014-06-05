@@ -1,0 +1,161 @@
+/************************************************************************/
+/*																								*/
+/*	color_space.c -- functions for Digilent Image Color Space Converter	*/
+/*																								*/
+/************************************************************************/
+/*	Author: HE, Cong; WANG, Tinghui (Steve)										*/
+/*	Copyright 2011 Digilent CN															*/
+/************************************************************************/
+/*  Module Description: 																*/
+/*		- provides various procedures for linearfilter module					*/
+/*																								*/
+/************************************************************************/
+/*  Revision History:																	*/
+/*			1.0	Initial Release		WANG, Tinghui		19May2011			*/
+/*																								*/
+/************************************************************************/
+
+/* ------------------------------------------------------------ */
+/*				Include File Definitions									 */
+/* ------------------------------------------------------------ */
+#include "color_space_header.h"
+#include <xil_io.h>
+
+#define printf xil_printf
+
+/* ------------------------------------------------------------ */
+/*				Local Type Definitions										 */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/*				Global Variables												 */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/*				Local Variables												 */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/*				Forward Declarations											 */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/*				Procedure Definitions										 */
+/* ------------------------------------------------------------ */
+
+/***	ColorSpaceInit
+ **
+ **	Synopsis:
+ **		ColorSpaceInit(lColorSpaceBaseAddress)
+ **
+ **	Parameters:
+ **		u32 lColorSpaceBaseAddress: base address for corresponding linearfilter device
+ **
+ **	Return Value:
+ **		integer: 0 - success; others - failure
+ **
+ **	Errors:
+ **		none
+ **
+ **	Description:
+ **		The function sets the display parameters for linear filter.
+ **		In this project, the parameters are set to be a linear kernel.
+ **
+ */
+
+int ColorSpaceInit(u32 lColorSpaceBaseAddress, u32 fOptions) {
+	switch (fOptions) {
+	case COLOR_SPACE_GREY:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x0000004a); //74 .289 <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000096); //150 .586 <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x0000001d); //29 .113 <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x0000004a); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x00000096); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x0000001d); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x0000004a); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000096); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x0000001d); // <3,3>
+		break;
+	case COLOR_SPACE_RED:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x000000ff); // <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000000); // <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x00000000); // <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x00000000); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x00000000); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x00000000); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x00000000); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000000); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x00000000); // <3,3>
+		break;
+	case COLOR_SPACE_GREEN:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x00000000); // <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000000); // <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x00000000); // <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x00000000); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x000000ff); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x00000000); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x00000000); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000000); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x00000000); // <3,3>
+		break;
+	case COLOR_SPACE_BLUE:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x00000000); // <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000000); // <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x00000000); // <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x00000000); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x00000000); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x00000000); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x00000000); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000000); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x000000ff); // <3,3>
+		break;
+	case COLOR_SPACE_SEPIA:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 74); //100 <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 146); //197 <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 35); //48 <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 66); //89 <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 130); //176 <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 31); //42 <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 52); //70 <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 101); //137 <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 25); //34 <3,3>
+		break;
+	case COLOR_SPACE_BGR:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x00000000); // <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000000); // <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x000000ff); // <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x00000000); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x000000ff); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x00000000); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x000000ff); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000000); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x00000000); // <3,3>
+		break;
+	case COLOR_SPACE_INVERT:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x000007ff); // <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000000); // <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x00000000); // <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x00000000); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x000007ff); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x00000000); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x00000000); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000000); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x000007ff); // <3,3>
+		break;
+//	case COLOR_SPACE_BYPASS:
+//		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x80000000); // bypass bit
+//		break;
+	default:
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat11, 0x000000ff); // <1,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat12, 0x00000000); // <1,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat13, 0x00000000); // <1,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat21, 0x00000000); // <2,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat22, 0x000000ff); // <2,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat23, 0x00000000); // <2,3>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat31, 0x00000000); // <3,1>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat32, 0x00000000); // <3,2>
+		Xil_Out32(lColorSpaceBaseAddress + blColorSpaceMat33, 0x000000ff); // <3,3>
+		break;
+	}
+	return 0;
+}

@@ -1,0 +1,10 @@
+##############################################################################
+## Filename:          C:/sam_work/EDK_projects/14_7/zybo_video_demo/pcores/axi_color_space_v1_00_a/data/axi_color_space_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Feb 07 13:47:36 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib axi_color_space_v1_00_a user_logic vhdl
+lib axi_color_space_v1_00_a axi_color_space vhdl

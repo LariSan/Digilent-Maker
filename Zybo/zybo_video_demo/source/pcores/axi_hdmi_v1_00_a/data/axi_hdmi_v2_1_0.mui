@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE doc SYSTEM "../../ipdialog.dtd" [
+	<!ENTITY C_USE_HDMI_RECEIVER '
+	<widget id="C_USE_HDMI_RECEIVER">
+		<key>C_USE_HDMI_RECEIVER</key>
+		<label>Use HDMI Receiver Module </label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_USE_HDMI_TRANSMITTER '
+	<widget id="C_USE_HDMI_TRANSMITTER">
+		<key>C_USE_HDMI_TRANSMITTER</key>
+		<label>Use HDMI Transmitter Module </label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_USE_HDMI_REGS '
+	<widget id="C_USE_HDMI_REGS">
+		<key>C_USE_HDMI_REGS</key>
+		<label>Use HDMI Software Registers Module </label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_USE_HDMI_DDC '
+	<widget id="C_USE_HDMI_DDC">
+		<key>C_USE_HDMI_DDC</key>
+		<label>Use HDMI DDC2B </label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_USE_MM2S_DATA_ALIGN '
+	<widget id="C_USE_MM2S_DATA_ALIGN">
+		<key>C_USE_MM2S_DATA_ALIGN</key>
+		<label>Use MM2S Data Align Engine (31 to 24) </label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_USE_S2MM_DATA_ALIGN '
+	<widget id="C_USE_S2MM_DATA_ALIGN">
+		<key>C_USE_S2MM_DATA_ALIGN</key>
+		<label>Use S2MM Data Align Engine (24 to 31) </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_AXI_STREAM_DATA_WIDTH '
+	<widget id="C_AXI_STREAM_DATA_WIDTH">
+		<key>C_AXI_STREAM_DATA_WIDTH</key>
+		<label>AXI4-Stream Data Width (S2MM and MM2S) </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_S_AXIS_MM2S_PROTOCOL '
+	<widget id="C_S_AXIS_MM2S_PROTOCOL">
+		<key>C_S_AXIS_MM2S_PROTOCOL</key>
+		<label>AXI4-Stream MM2S Protocol</label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_M_AXIS_S2MM_PROTOCOL '
+	<widget id="C_M_AXIS_S2MM_PROTOCOL">
+		<key>C_M_AXIS_S2MM_PROTOCOL</key>
+		<label>AXI4-Stream S2MM Protocol</label>
+		<tip></tip>
+	</widget>
+	'>
+    <!ENTITY C_S_AXI_PROTOCOL '
+	<widget id="C_S_AXI_PROTOCOL">
+		<key>C_S_AXI_PROTOCOL</key>
+		<label>AXI4-Lite Protocol</label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_BASEADDR '
+		<widget id="C_BASEADDR">
+		<key>C_BASEADDR</key>
+		<label>AXI4-Lite Baseaddress</label>
+		<tip></tip>
+        </widget>
+	'>
+	<!ENTITY C_HIGHADDR '
+		<widget id="C_HIGHADDR">
+		<key>C_HIGHADDR</key>
+		<label>AXI4-Lite Highaddress</label>
+		<tip></tip>
+        </widget>
+	'>
+]>
+
+<doc>
+	<view id="Config">
+		<display>Config</display>
+		<group id="All">
+			<display>All</display>
+            <item>&C_USE_HDMI_RECEIVER;</item>
+            <item>&C_USE_HDMI_TRANSMITTER;</item>
+            <item>&C_USE_HDMI_REGS;</item>
+            <item>&C_USE_HDMI_DDC;</item>
+            <item>&C_USE_MM2S_DATA_ALIGN;</item>
+            <item>&C_USE_S2MM_DATA_ALIGN;</item>
+            <item>&C_AXI_STREAM_DATA_WIDTH;</item>
+            <item>&C_S_AXIS_MM2S_PROTOCOL;</item>
+            <item>&C_M_AXIS_S2MM_PROTOCOL;</item>
+		</group>
+	</view>
+    <view id="System">
+		<display>System</display>
+		<group id="Addresses">
+			<display>Addresses</display>
+			<item>&C_BASEADDR;</item>
+			<item>&C_HIGHADDR;</item>
+		</group>
+	</view>
+</doc>

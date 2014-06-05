@@ -1,0 +1,1235 @@
+02:14:22 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+02:14:33 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22676	   1096	  29780	  53552	   d130	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+02:15:53 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+02:15:53 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../filterdemo_bsp/ps7_cortexa9_0/lib\libxil.a(xil-crt0.o): In function `_start':
+C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Workspace_home\filterdemo_bsp\ps7_cortexa9_0\libsrc\standalone_v3_10_a\src/xil-crt0.S:149: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [filterdemo.elf] Error 1
+02:15:57 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+02:22:24 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+02:22:25 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+02:22:25 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+02:22:37 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+02:24:50 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+06:24:55 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+06:29:04 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+06:30:36 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+07:39:53 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+07:39:54 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+07:39:57 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+07:39:57 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+07:39:57 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+07:40:08 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+07:40:12 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+07:40:23 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+07:40:23 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+07:40:24 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+07:40:34 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+07:50:52 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+07:50:55 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+07:50:55 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+07:50:56 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+07:51:07 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+07:54:10 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+07:54:20 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+07:55:49 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+07:58:19 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+07:58:26 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+08:00:05 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+08:00:41 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+08:42:07 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+08:42:32 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:17:07 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+09:17:10 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+09:17:11 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+09:17:11 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+09:17:22 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+09:34:17 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+09:35:28 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:35:38 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:36:21 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:38:35 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+09:38:35 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+09:38:35 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+09:38:47 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+09:40:22 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:40:37 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:40:50 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:40:59 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:44:45 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+09:45:16 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+10:10:14 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+10:10:18 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+10:10:18 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+10:10:18 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+10:10:30 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28092	   1096	  29780	  58968	   e658	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+10:17:33 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+11:30:02 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+11:34:58 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+11:35:02 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28152	   1096	  29780	  59028	   e694	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+11:56:23 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28152	   1096	  29780	  59028	   e694	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+11:56:55 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:9: warning: unused variable 'temp' [-Wunused-variable]
+../src/helloworld.c:54:9: warning: unused variable 'ctrlState' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27992	   1096	  29780	  58868	   e5f4	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+12:01:25 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+../src/linear_filter.c: In function 'LinearFilterInit':
+../src/linear_filter.c:174:7: error: 'LinearFilter_Bypass' undeclared (first use in this function)
+../src/linear_filter.c:174:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/linear_filter.o] Error 1
+12:01:35 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28048	   1096	  29780	  58924	   e62c	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+12:02:04 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+12:46:08 **** Auto Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28052	   1096	  29780	  58928	   e630	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+12:46:15 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+14:44:58 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+14:46:09 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+14:47:04 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+14:47:21 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+14:48:01 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+14:49:05 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+20:49:20 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+20:49:23 **** Clean-only build of project filterdemo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+20:49:23 **** Clean-only build of configuration Debug for project filterdemo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  filterdemo.elf.size  filterdemo.elf
+' '
+20:49:24 **** Build of project filterdemo_bsp ****
+make -k all 
+libgen -hw ../zybo_video_demo_hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../zybo_video_demo_hw_platform/system.xml -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling xadc"
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+20:49:36 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+20:49:36 **** Build of configuration Debug for project filterdemo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:9: warning: unused variable 'temp' [-Wunused-variable]
+../src/helloworld.c:54:9: warning: unused variable 'ctrlState' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: filterdemo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "filterdemo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: filterdemo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size filterdemo.elf  |tee "filterdemo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28052	   1096	  29780	  58928	   e630	filterdemo.elf
+'Finished building: filterdemo.elf.size'
+' '
+20:51:38 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+20:51:55 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+21:00:17 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+21:32:02 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+21:32:29 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+21:32:48 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+21:33:10 **** Incremental Build of configuration Debug for project filterdemo ****
+make all 
+make: Nothing to be done for `all'.
+21:34:46 **** Build of configuration Debug for project fsbl ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22676	   1096	  29780	  53552	   d130	fsbl.elf
+'Finished building: fsbl.elf.size'
+' '
+21:35:06 **** Build of configuration Debug for project fsbl ****
+make all 
+'Building file: ../src/ddr_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_init.d" -MT"src/ddr_init.d" -o "src/ddr_init.o" "../src/ddr_init.c"
+'Finished building: ../src/ddr_init.c'
+' '
+'Building file: ../src/ff.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ff.d" -MT"src/ff.d" -o "src/ff.o" "../src/ff.c"
+'Finished building: ../src/ff.c'
+' '
+'Building file: ../src/fsbl_handoff.S'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_handoff.d" -MT"src/fsbl_handoff.d" -o "src/fsbl_handoff.o" "../src/fsbl_handoff.S"
+'Finished building: ../src/fsbl_handoff.S'
+' '
+'Building file: ../src/fsbl_hooks.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/fsbl_hooks.d" -MT"src/fsbl_hooks.d" -o "src/fsbl_hooks.o" "../src/fsbl_hooks.c"
+'Finished building: ../src/fsbl_hooks.c'
+' '
+'Building file: ../src/image_mover.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/image_mover.d" -MT"src/image_mover.d" -o "src/image_mover.o" "../src/image_mover.c"
+'Finished building: ../src/image_mover.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/md5.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/md5.d" -MT"src/md5.d" -o "src/md5.o" "../src/md5.c"
+'Finished building: ../src/md5.c'
+' '
+'Building file: ../src/mmc.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mmc.d" -MT"src/mmc.d" -o "src/mmc.o" "../src/mmc.c"
+'Finished building: ../src/mmc.c'
+' '
+'Building file: ../src/nand.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nand.d" -MT"src/nand.d" -o "src/nand.o" "../src/nand.c"
+'Finished building: ../src/nand.c'
+' '
+'Building file: ../src/nor.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/nor.d" -MT"src/nor.d" -o "src/nor.o" "../src/nor.c"
+'Finished building: ../src/nor.c'
+' '
+'Building file: ../src/pcap.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pcap.d" -MT"src/pcap.d" -o "src/pcap.o" "../src/pcap.c"
+'Finished building: ../src/pcap.c'
+' '
+'Building file: ../src/ps7_init.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ps7_init.d" -MT"src/ps7_init.d" -o "src/ps7_init.o" "../src/ps7_init.c"
+'Finished building: ../src/ps7_init.c'
+' '
+'Building file: ../src/qspi.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/qspi.d" -MT"src/qspi.d" -o "src/qspi.o" "../src/qspi.c"
+'Finished building: ../src/qspi.c'
+' '
+'Building file: ../src/rsa.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rsa.d" -MT"src/rsa.d" -o "src/rsa.o" "../src/rsa.c"
+'Finished building: ../src/rsa.c'
+' '
+'Building file: ../src/sd.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../filterdemo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd.d" -MT"src/sd.d" -o "src/sd.o" "../src/sd.c"
+'Finished building: ../src/sd.c'
+' '
+'Building target: fsbl.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -L"C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Workspace_home\fsbl\src" -Wl,-T -Wl,../src/lscript.ld -L../../filterdemo_bsp/ps7_cortexa9_0/lib -o "fsbl.elf"  ./src/ddr_init.o ./src/ff.o ./src/fsbl_handoff.o ./src/fsbl_hooks.o ./src/image_mover.o ./src/main.o ./src/md5.o ./src/mmc.o ./src/nand.o ./src/nor.o ./src/pcap.o ./src/ps7_init.o ./src/qspi.o ./src/rsa.o ./src/sd.o   -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: fsbl.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68892	  11528	  68340	 148760	  24518	fsbl.elf
+'Finished building: fsbl.elf.size'
+' '
+21:35:45 **** Auto Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for `all'.
+23:09:27 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'

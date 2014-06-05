@@ -1,0 +1,585 @@
+17:02:24 **** Build of project video_demo_bsp ****
+make -k all 
+libgen -hw ../hw_platform/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling common"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling standalone"
+"Compiling gpio"
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling emacps"
+"Compiling gpiops"
+"Compiling qspips"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling ttcps"
+"Compiling uartps"
+"Compiling usbps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+
+**** Build of configuration Debug for project video_demo ****
+
+Nothing to build for project video_demo
+17:03:59 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:56:9: warning: unused variable 'temp' [-Wunused-variable]
+../src/helloworld.c:54:9: warning: unused variable 'ctrlState' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+18:16:20 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+18:16:29 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+19:02:41 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+19:43:09 **** Auto Build of project video_demo_bsp ****
+make -k all 
+'Finished building libraries'
+19:43:34 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+../src/linear_filter.c:53:0: warning: "hsync" redefined [enabled by default]
+../src/linear_filter.c:29:0: note: this is the location of the previous definition
+../src/linear_filter.c:54:0: warning: "hbpr" redefined [enabled by default]
+../src/linear_filter.c:30:0: note: this is the location of the previous definition
+../src/linear_filter.c:55:0: warning: "hfpr" redefined [enabled by default]
+../src/linear_filter.c:31:0: note: this is the location of the previous definition
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+19:45:57 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+19:46:13 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+19:56:04 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+19:56:49 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+20:01:01 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+20:36:54 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+21:02:28 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+21:05:43 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+21:09:28 **** Incremental Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+22:34:10 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+../src/linear_filter.c: In function 'LinearFilterInit':
+../src/linear_filter.c:127:59: error: 'hsync' undeclared (first use in this function)
+../src/linear_filter.c:127:59: note: each undeclared identifier is reported only once for each function it appears in
+../src/linear_filter.c:128:60: error: 'hbpr' undeclared (first use in this function)
+../src/linear_filter.c:129:60: error: 'hfpr' undeclared (first use in this function)
+../src/linear_filter.c:130:59: error: 'htr' undeclared (first use in this function)
+../src/linear_filter.c:131:59: error: 'vsync' undeclared (first use in this function)
+../src/linear_filter.c:132:60: error: 'vbpr' undeclared (first use in this function)
+../src/linear_filter.c:133:60: error: 'vfpr' undeclared (first use in this function)
+../src/linear_filter.c:134:59: error: 'vtr' undeclared (first use in this function)
+make: *** [src/linear_filter.o] Error 1
+22:34:17 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+12:44:17 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28248	   1096	  29780	  59124	   e6f4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+12:46:23 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28188	   1096	  29780	  59064	   e6b8	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+12:46:26 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+12:54:23 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+make: Nothing to be done for `all'.
+12:54:31 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27268	   1096	  29780	  58144	   e320	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+12:57:31 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:64:12: error: 'lLinearFilterBaseAddress' undeclared (first use in this function)
+../src/helloworld.c:64:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:74:58: error: 'hsync' undeclared (first use in this function)
+../src/helloworld.c:75:59: error: 'hbpr' undeclared (first use in this function)
+../src/helloworld.c:76:59: error: 'hfpr' undeclared (first use in this function)
+../src/helloworld.c:77:58: error: 'htr' undeclared (first use in this function)
+../src/helloworld.c:78:58: error: 'vsync' undeclared (first use in this function)
+../src/helloworld.c:79:59: error: 'vbpr' undeclared (first use in this function)
+../src/helloworld.c:80:59: error: 'vfpr' undeclared (first use in this function)
+../src/helloworld.c:81:58: error: 'vtr' undeclared (first use in this function)
+../src/helloworld.c:56:9: warning: unused variable 'temp' [-Wunused-variable]
+../src/helloworld.c:54:9: warning: unused variable 'ctrlState' [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+12:57:56 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:12: error: 'lLinearFilterBaseAddress' undeclared (first use in this function)
+../src/helloworld.c:76:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:68:9: warning: unused variable 'temp' [-Wunused-variable]
+../src/helloworld.c:66:9: warning: unused variable 'ctrlState' [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+12:58:11 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:12: error: 'lLinearFilterBaseAddress' undeclared (first use in this function)
+../src/helloworld.c:76:12: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:68:9: warning: unused variable 'temp' [-Wunused-variable]
+../src/helloworld.c:66:9: warning: unused variable 'ctrlState' [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+12:59:29 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/linear_filter.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/linear_filter.d" -MT"src/linear_filter.d" -o "src/linear_filter.o" "../src/linear_filter.c"
+'Finished building: ../src/linear_filter.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25324	   1096	  29780	  56200	   db88	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+13:12:40 **** Auto Build of project video_demo_bsp ****
+make -k all 
+'Finished building libraries'
+13:12:41 **** Auto Build of project video_demo_bsp ****
+make -k all 
+'Finished building libraries'
+13:29:32 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+../src/color_space.c: In function 'ColorSpaceInit':
+../src/color_space.c:112:7: error: 'COLOR_SPACE_SEPIA' undeclared (first use in this function)
+../src/color_space.c:112:7: note: each undeclared identifier is reported only once for each function it appears in
+../src/color_space.c:123:7: error: 'COLOR_SPACE_BGR' undeclared (first use in this function)
+make: *** [src/color_space.o] Error 1
+13:29:35 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+../src/color_space.c: In function 'ColorSpaceInit':
+../src/color_space.c:101:7: error: 'COLOR_SPACE_BLUE' undeclared (first use in this function)
+../src/color_space.c:101:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/color_space.o] Error 1
+13:30:09 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25684	   1096	  29780	  56560	   dcf0	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+13:38:00 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25684	   1096	  29780	  56560	   dcf0	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+14:00:11 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25684	   1096	  29780	  56560	   dcf0	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+14:05:01 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25684	   1096	  29780	  56560	   dcf0	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+14:38:24 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+../src/color_space.c: In function 'ColorSpaceInit':
+../src/color_space.c:134:7: error: 'COLOR_SPACE_INVERT' undeclared (first use in this function)
+../src/color_space.c:134:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/color_space.o] Error 1
+14:38:32 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25864	   1096	  29780	  56740	   dda4	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+14:39:39 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25872	   1096	  29780	  56748	   ddac	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+14:40:08 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25872	   1096	  29780	  56748	   ddac	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+15:05:06 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+../src/color_space.c: In function 'ColorSpaceInit':
+../src/color_space.c:135:65: warning: statement with no effect [-Wunused-value]
+../src/color_space.c:136:3: error: expected ';' before 'Xil_Out32'
+../src/color_space.c:139:65: warning: statement with no effect [-Wunused-value]
+../src/color_space.c:140:3: error: expected ';' before 'Xil_Out32'
+../src/color_space.c:143:65: warning: statement with no effect [-Wunused-value]
+../src/color_space.c:144:3: error: expected ';' before 'break'
+make: *** [src/color_space.o] Error 1
+15:05:17 **** Auto Build of configuration Debug for project video_demo ****
+make all 
+'Building file: ../src/color_space.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../video_demo_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/color_space.d" -MT"src/color_space.d" -o "src/color_space.o" "../src/color_space.c"
+'Finished building: ../src/color_space.c'
+' '
+'Building target: video_demo.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../video_demo_bsp/ps7_cortexa9_0/lib -o "video_demo.elf"  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: video_demo.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size video_demo.elf  |tee "video_demo.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25872	   1096	  29780	  56748	   ddac	video_demo.elf
+'Finished building: video_demo.elf.size'
+' '
+17:07:39 **** Clean-only build of configuration Debug for project video_demo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  video_demo.elf.size  video_demo.elf
+' '
+17:07:39 **** Clean-only build of project video_demo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+17:07:49 **** Clean-only build of configuration Debug for project video_demo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  video_demo.elf.size  video_demo.elf
+' '
+17:07:49 **** Clean-only build of project video_demo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0

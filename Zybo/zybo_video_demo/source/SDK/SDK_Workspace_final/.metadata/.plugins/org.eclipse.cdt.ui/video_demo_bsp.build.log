@@ -1,0 +1,6 @@
+17:07:49 **** Clean-only build of project video_demo_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+
+17:07:49 Build Finished (took 135ms)
+

@@ -1,0 +1,8 @@
+-batch 
+-create axi_vga 
+-ver 1.00.a 
+-dir "C:\sam_work\EDK_projects\ZyBo_Verification" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 13 
+-xps 

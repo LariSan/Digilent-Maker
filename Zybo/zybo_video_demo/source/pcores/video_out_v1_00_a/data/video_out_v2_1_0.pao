@@ -1,0 +1,17 @@
+##############################################################################
+## Filename:          D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/data/video_out_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu Nov 14 14:42:15 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib video_out_v1_00_a Video vhdl
+lib video_out_v1_00_a TWICtl vhdl
+lib video_out_v1_00_a TMDSEncoder vhdl
+lib video_out_v1_00_a SerializerN_1 vhdl
+lib video_out_v1_00_a LocalRst vhdl
+lib video_out_v1_00_a VideoTimingCtl vhdl
+lib video_out_v1_00_a hdmi_ddc_r vhdl
+lib video_out_v1_00_a DVITransmitter vhdl
+lib video_out_v1_00_a dcm7 vhdl
+lib video_out_v1_00_a cec_initiator vhdl
+lib video_out_v1_00_a video_out vhdl

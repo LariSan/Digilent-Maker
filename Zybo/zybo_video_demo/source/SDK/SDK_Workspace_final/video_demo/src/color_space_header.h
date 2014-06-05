@@ -1,0 +1,62 @@
+/************************************************************************/
+/*																								*/
+/*	color_space_header.h	--	Digilent Image color space converter					*/
+/*																								*/
+/************************************************************************/
+/*	Author:	HE, Cong; WANG, Tinghui (steve)										*/
+/*	Copyright 2011 Digilent CN															*/
+/************************************************************************/
+/*  File Description:																	*/
+/*																								*/
+/*																								*/
+/************************************************************************/
+/*  Revision History:																	*/
+/*			1.0 Initial Release			WANG, Tinghui		19May2011			*/
+/*																								*/
+/************************************************************************/
+#ifndef COLOR_SPACE_HEADER_H		/* prevent circular inclusions */
+#define COLOR_SPACE_HEADER_H		/* by using protection macros */
+
+#include <stdio.h>
+#include <xil_io.h>
+
+#include "xparameters.h"
+
+/* ------------------------------------------------------------ */
+/*					Miscellaneous Declarations								 */
+/* ------------------------------------------------------------ */
+#define blColorSpaceMat11	0x00000000 // Parameter <1,1>
+#define blColorSpaceMat12	0x00000004 // Parameter <1,2>
+#define blColorSpaceMat13	0x00000008 // Parameter <1,3>
+#define blColorSpaceMat21	0x0000000c // Parameter <2,1>
+#define blColorSpaceMat22	0x00000010 // Parameter <2,2>
+#define blColorSpaceMat23	0x00000014 // Parameter <2,3>
+#define blColorSpaceMat31	0x00000018 // Parameter <3,1>
+#define blColorSpaceMat32	0x0000001c // Parameter <3,2>
+#define blColorSpaceMat33	0x00000020 // Parameter <3,3>
+
+#define COLOR_SPACE_GREY 0x00000001 // Grey Level Image
+#define COLOR_SPACE_SEPIA 0x2
+#define COLOR_SPACE_INVERT 0x3
+#define COLOR_SPACE_BGR 0x4
+#define COLOR_SPACE_RED  0x00000005 // Red Channel
+#define COLOR_SPACE_GREEN 0x00000006 // Green Channel
+#define COLOR_SPACE_BLUE 0x00000007 // Green Channel
+//#define COLOR_SPACE_BYPASS 0xF //bypass core
+
+/* ------------------------------------------------------------ */
+/*					General Type Declarations								 */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/*					Variable Declarations									 */
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+/*					Procedure Declarations									 */
+/* ------------------------------------------------------------ */
+int ColorSpaceInit(u32 lColorSpaceBaseAddress, u32 fOptions);
+
+/* ------------------------------------------------------------ */
+#endif
+/************************************************************************/

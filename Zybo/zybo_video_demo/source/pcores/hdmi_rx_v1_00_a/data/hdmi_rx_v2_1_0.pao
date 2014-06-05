@@ -1,0 +1,18 @@
+##############################################################################
+## Filename:          C:/sam_work/EDK_projects/14_7/zybo_video_demo/pcores/hdmi_rx_v1_00_a/data/hdmi_rx_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Feb 07 12:40:32 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+##lib proc_common_v3_00_a  all 
+##lib axi_lite_ipif_v1_01_a  all 
+
+lib hdmi_rx_v1_00_a idelay_clk vhdl
+lib hdmi_rx_v1_00_a hdmi_clk vhdl
+lib hdmi_rx_v1_00_a TWISlaveCtl vhdl
+lib hdmi_rx_v1_00_a hdmi_ddc_w vhdl
+lib hdmi_rx_v1_00_a ibuffs_copy vhdl
+lib hdmi_rx_v1_00_a DRAM32XN verilog
+lib hdmi_rx_v1_00_a chnlbond verilog
+lib hdmi_rx_v1_00_a phasealign verilog
+lib hdmi_rx_v1_00_a decoder verilog
+lib hdmi_rx_v1_00_a hdmi_rx vhdl

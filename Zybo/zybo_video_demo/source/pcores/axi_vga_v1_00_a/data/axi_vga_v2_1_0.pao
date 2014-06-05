@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          C:/sam_work/EDK_projects/ZyBo_Verification/pcores/axi_vga_v1_00_a/data/axi_vga_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sat Sep 28 10:06:38 2013 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib axi_vga_v1_00_a vdma_to_vga vhdl
+lib axi_vga_v1_00_a mmcme2_drp verilog
+lib axi_vga_v1_00_a user_logic vhdl
+lib axi_vga_v1_00_a axi_vga vhdl

@@ -1,0 +1,73 @@
+17:01:37.950 INFO  - Project 'hw_platform' created. You can now create BSPs and application projects targeting this hardware platform. 
+18:17:20.184 WARN  - Unable to obtain port 2350 for use by XMD, java.net.BindException: Address already in use: JVM_Bind 
+18:22:13.975 INFO  - Invoking Bootgen:  
+18:22:14.592 INFO  - Bootgen command execution is done. 
+19:43:35.370 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+19:44:57.266 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+19:46:07.643 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+19:46:15.455 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:46:15.647 INFO  - PS initialization will be done as it is not done before. 
+19:46:15.649 INFO  - Running PS initialization.... 
+19:46:34.732 INFO  - ps7_init is completed. 
+19:46:35.314 INFO  - ps7_post_config is completed. 
+19:46:35.570 INFO  - PS Initialization is complete. 
+19:56:36.268 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+19:56:52.156 INFO  - Processor reset is completed for ps7_cortexa9_0 
+19:58:00.639 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+20:01:03.652 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:01:03.924 INFO  - PS initialization will be done as it is not done before. 
+20:01:03.926 INFO  - Running PS initialization.... 
+20:01:22.720 INFO  - ps7_init is completed. 
+20:01:23.384 INFO  - ps7_post_config is completed. 
+20:01:23.658 INFO  - PS Initialization is complete. 
+20:05:31.837 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+20:36:48.703 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+20:36:56.960 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:05:12.011 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+21:05:46.209 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:05:46.401 INFO  - PS initialization will be done as it is not done before. 
+21:05:46.404 INFO  - Running PS initialization.... 
+21:06:05.391 INFO  - ps7_init is completed. 
+21:06:06.057 INFO  - ps7_post_config is completed. 
+21:06:06.330 INFO  - PS Initialization is complete. 
+21:06:59.649 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+21:08:13.410 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:09:23.860 INFO  - FPGA configured successfully with bitstream "C:/sam_work/final_projects/zybo_video_demo/zybo_video_demo/SDK/SDK_Workspace_final/hw_platform/system.bit" 
+21:09:31.303 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:09:31.496 INFO  - PS initialization will be done as it is not done before. 
+21:09:31.498 INFO  - Running PS initialization.... 
+21:09:51.410 INFO  - ps7_init is completed. 
+21:09:52.059 INFO  - ps7_post_config is completed. 
+21:09:52.301 INFO  - PS Initialization is complete. 
+21:15:55.590 INFO  - Invoking Bootgen:  
+21:15:56.138 INFO  - Bootgen command execution is done. 
+22:32:05.177 INFO  - Invoking Bootgen:  
+22:32:05.733 INFO  - Bootgen command execution is done. 
+22:34:43.837 INFO  - Invoking Bootgen:  
+22:34:44.376 INFO  - Bootgen command execution is done. 
+12:59:42.536 INFO  - Invoking Bootgen:  
+12:59:43.092 INFO  - Bootgen command execution is done. 
+13:07:42.740 INFO  - Project hw_platform's source hardware specification located at C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+13:12:40.512 INFO  - Copied contents of C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \hw_platform\system.xml. 
+13:12:40.878 INFO  - Copied contents of C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \hw_platform\system.bit. 
+13:12:41.193 INFO  - Copied contents of C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \hw_platform\ps7_init.c. 
+13:12:41.197 INFO  - Copied contents of C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \hw_platform\ps7_init.h. 
+13:12:41.227 INFO  - Copied contents of C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \hw_platform\ps7_init.html. 
+13:12:41.236 INFO  - Copied contents of C:\sam_work\final_projects\zybo_video_demo\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform\ps7_init.tcl. 
+13:12:41.384 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+13:12:43.543 INFO  - Updating hardware inferred compiler options for video_demo. 
+13:12:43.550 INFO  - Clearing existing target manager status. 
+13:31:57.012 INFO  - Invoking Bootgen:  
+13:31:57.549 INFO  - Bootgen command execution is done. 
+13:38:44.969 INFO  - Invoking Bootgen:  
+13:38:45.507 INFO  - Bootgen command execution is done. 
+14:00:22.496 INFO  - Invoking Bootgen:  
+14:00:23.035 INFO  - Bootgen command execution is done. 
+14:05:17.925 INFO  - Invoking Bootgen:  
+14:05:18.473 INFO  - Bootgen command execution is done. 
+14:40:48.260 INFO  - Invoking Bootgen:  
+14:40:48.831 INFO  - Bootgen command execution is done. 
+15:05:30.028 INFO  - Invoking Bootgen:  
+15:05:30.626 INFO  - Bootgen command execution is done. 
+17:07:58.504 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

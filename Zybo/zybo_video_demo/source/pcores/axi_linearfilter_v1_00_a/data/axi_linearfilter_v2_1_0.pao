@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          C:/sam_work/EDK_projects/14_7/zybo_video_demo/pcores/axi_linearfilter_v1_00_a/data/axi_linearfilter_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Fri Feb 07 11:20:47 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+##lib linearfilter_v1_00_a fifo vhdl
+##lib linearfilter_v1_00_a mult vhdl
+lib axi_linearfilter_v1_00_a user_logic vhdl
+lib axi_linearfilter_v1_00_a axi_linearfilter vhdl

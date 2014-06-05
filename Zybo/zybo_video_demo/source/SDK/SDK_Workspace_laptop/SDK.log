@@ -1,0 +1,345 @@
+02:13:55.580 INFO  - Processing command line option -hwspec C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml. 
+02:23:12.046 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+02:23:24.850 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+02:24:51.939 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:24:52.179 INFO  - PS initialization will be done as it is not done before. 
+02:24:52.179 INFO  - Running PS initialization.... 
+02:25:09.520 INFO  - ps7_init is completed. 
+02:25:10.090 INFO  - ps7_post_config is completed. 
+02:25:10.330 INFO  - PS Initialization is complete. 
+06:24:54.180 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+06:24:55.755 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+06:25:24.260 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+06:29:06.299 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+06:29:06.366 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Failed to lock the JTAG cable for exclusive access
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+06:30:06.666 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+06:30:06.666 ERROR - Timeout occured while waiting to get reply for command "targets 64" 
+06:30:38.967 INFO  - Processor reset is completed for ps7_cortexa9_0 
+07:24:14.160 INFO  - Project zybo_video_demo_hw_platform's source hardware specification located at C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+07:39:53.438 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \zybo_video_demo_hw_platform\system.xml. 
+07:39:53.442 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+07:39:53.953 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \zybo_video_demo_hw_platform\ps7_init.c. 
+07:39:53.954 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \zybo_video_demo_hw_platform\ps7_init.h. 
+07:39:54.032 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \zybo_video_demo_hw_platform\ps7_init.html. 
+07:39:54.033 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \zybo_video_demo_hw_platform\ps7_init.tcl. 
+07:39:54.283 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+07:39:55.849 INFO  - Updating hardware inferred compiler options for filterdemo. 
+07:39:55.850 INFO  - Clearing existing target manager status. 
+07:39:55.851 INFO  - Closing and re-opening the MSS file of ther project filterdemo_bsp 
+07:39:57.010 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+07:40:07.974 INFO  - Project zybo_video_demo_hw_platform's source hardware specification located at C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+07:40:10.920 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \zybo_video_demo_hw_platform\system.xml. 
+07:40:10.924 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+07:40:10.951 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \zybo_video_demo_hw_platform\ps7_init.c. 
+07:40:10.952 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \zybo_video_demo_hw_platform\ps7_init.h. 
+07:40:11.030 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \zybo_video_demo_hw_platform\ps7_init.html. 
+07:40:11.031 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \zybo_video_demo_hw_platform\ps7_init.tcl. 
+07:40:11.273 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+07:40:12.803 INFO  - Updating hardware inferred compiler options for filterdemo. 
+07:40:12.830 INFO  - Clearing existing target manager status. 
+07:40:12.830 INFO  - Closing and re-opening the MSS file of ther project filterdemo_bsp 
+07:40:14.021 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+07:45:57.038 INFO  - Project zybo_video_demo_hw_platform's source hardware specification located at C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+07:50:52.289 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \zybo_video_demo_hw_platform\system.xml. 
+07:50:52.295 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+07:50:52.344 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \zybo_video_demo_hw_platform\ps7_init.c. 
+07:50:52.345 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \zybo_video_demo_hw_platform\ps7_init.h. 
+07:50:52.425 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \zybo_video_demo_hw_platform\ps7_init.html. 
+07:50:52.425 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \zybo_video_demo_hw_platform\ps7_init.tcl. 
+07:50:52.644 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+07:50:54.299 INFO  - Updating hardware inferred compiler options for filterdemo. 
+07:50:54.302 INFO  - Clearing existing target manager status. 
+07:50:54.303 INFO  - Closing and re-opening the MSS file of ther project filterdemo_bsp 
+07:50:55.495 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+07:51:11.460 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+07:54:20.863 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+07:55:51.431 INFO  - Processor reset is completed for ps7_cortexa9_0 
+07:58:37.080 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Could not power-up the DAP (CTRL_STAT=0x1000000)
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+08:00:16.080 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Could not power-up the DAP (CTRL_STAT=0x1000000)
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+08:00:52.064 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Could not power-up the DAP (CTRL_STAT=0x1000000)
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+08:01:58.265 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+08:03:12.682 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+08:42:09.837 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:42:10.077 INFO  - PS initialization will be done as it is not done before. 
+08:42:10.078 INFO  - Running PS initialization.... 
+08:42:21.878 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0x00000020)
+    Error Address = 0xf80060b0
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+08:42:34.637 INFO  - Processor reset is completed for ps7_cortexa9_0 
+08:42:34.894 INFO  - PS initialization will be done as it is not done before. 
+08:42:34.894 INFO  - Running PS initialization.... 
+08:42:52.312 INFO  - ps7_init is completed. 
+08:42:52.898 INFO  - ps7_post_config is completed. 
+08:42:53.154 INFO  - PS Initialization is complete. 
+09:03:43.363 INFO  - Project zybo_video_demo_hw_platform's source hardware specification located at C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+09:17:07.474 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \zybo_video_demo_hw_platform\system.xml. 
+09:17:07.478 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+09:17:07.501 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \zybo_video_demo_hw_platform\ps7_init.c. 
+09:17:07.502 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \zybo_video_demo_hw_platform\ps7_init.h. 
+09:17:07.582 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \zybo_video_demo_hw_platform\ps7_init.html. 
+09:17:07.583 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \zybo_video_demo_hw_platform\ps7_init.tcl. 
+09:17:07.806 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+09:17:09.481 INFO  - Updating hardware inferred compiler options for filterdemo. 
+09:17:09.482 INFO  - Clearing existing target manager status. 
+09:17:09.482 INFO  - Closing and re-opening the MSS file of ther project filterdemo_bsp 
+09:17:10.637 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+09:34:15.669 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+09:34:16.960 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+09:35:10.623 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+09:35:28.935 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+09:35:41.118 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:35:43.619 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+09:35:43.622 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+09:36:21.505 ERROR - Checking FPGA configuration failed..Lost communication with jtag cable. Run "xdisconnect -cable"
+    and start over again
+
+ 
+09:36:48.028 ERROR - FPGA Configuration failed.Lost communication with jtag cable. Run "xdisconnect -cable"
+    and start over again
+
+ 
+09:37:20.644 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+09:38:01.548 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+09:40:02.309 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+09:40:23.212 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Digilent Plugin: failed to open device handle
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+09:40:31.556 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+09:40:37.835 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:40:40.134 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+09:40:51.329 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Digilent Plugin: failed to open device handle
+
+    Failed to Open JTAG Cable
+    Unknown Error
+ 
+09:41:00.757 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+09:41:02.056 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+09:41:18.380 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+09:44:36.525 INFO  - Processing command line option -hwspec C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml. 
+09:44:50.128 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:44:50.402 INFO  - PS initialization will be done as it is not done before. 
+09:44:50.402 INFO  - Running PS initialization.... 
+09:45:07.551 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0x00000020)
+    Error Address = 0xe000a008
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+09:45:19.116 INFO  - Processor reset is completed for ps7_cortexa9_0 
+09:45:19.373 INFO  - PS initialization will be done as it is not done before. 
+09:45:19.373 INFO  - Running PS initialization.... 
+09:45:36.750 INFO  - ps7_init is completed. 
+09:45:37.318 INFO  - ps7_post_config is completed. 
+09:45:37.576 INFO  - PS Initialization is complete. 
+10:06:39.769 INFO  - Project zybo_video_demo_hw_platform's source hardware specification located at C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+10:10:14.382 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \zybo_video_demo_hw_platform\system.xml. 
+10:10:14.386 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+10:10:14.419 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \zybo_video_demo_hw_platform\ps7_init.c. 
+10:10:14.420 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \zybo_video_demo_hw_platform\ps7_init.h. 
+10:10:14.499 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \zybo_video_demo_hw_platform\ps7_init.html. 
+10:10:14.500 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \zybo_video_demo_hw_platform\ps7_init.tcl. 
+10:10:14.847 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+10:10:16.630 INFO  - Updating hardware inferred compiler options for filterdemo. 
+10:10:16.631 INFO  - Clearing existing target manager status. 
+10:10:16.633 INFO  - Closing and re-opening the MSS file of ther project filterdemo_bsp 
+10:10:18.022 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+10:15:46.528 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+10:17:33.547 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+11:29:44.773 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+11:30:05.392 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:30:05.633 INFO  - PS initialization will be done as it is not done before. 
+11:30:05.633 INFO  - Running PS initialization.... 
+11:30:23.096 INFO  - ps7_init is completed. 
+11:30:23.679 INFO  - ps7_post_config is completed. 
+11:30:23.936 INFO  - PS Initialization is complete. 
+12:02:05.257 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:02:10.721 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:46:17.258 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:46:22.754 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:44:12.313 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+14:44:58.507 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+14:46:20.080 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Could not power-up the DAP (CTRL_STAT=0x1000000)
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:46:59.993 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+14:47:06.374 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:47:06.664 INFO  - PS initialization will be done as it is not done before. 
+14:47:06.664 INFO  - Running PS initialization.... 
+14:47:08.972 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0x00000020)
+    Error Address = 0xf8000734
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+14:47:23.237 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:47:23.526 INFO  - PS initialization will be done as it is not done before. 
+14:47:23.527 INFO  - Running PS initialization.... 
+14:47:26.492 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0x00000020)
+    Error Address = 0xf8000758
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+14:48:03.858 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:48:04.098 INFO  - PS initialization will be done as it is not done before. 
+14:48:04.098 INFO  - Running PS initialization.... 
+14:48:09.709 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+Cannot write to target
+
+
+    AP transaction error (DP CTRL_STAT=0x00000020)
+    Error Address = 0xf80007d4
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+14:49:07.964 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:49:08.237 INFO  - PS initialization will be done as it is not done before. 
+14:49:08.237 INFO  - Running PS initialization.... 
+14:49:25.685 INFO  - ps7_init is completed. 
+14:49:26.254 INFO  - ps7_post_config is completed. 
+14:49:26.526 INFO  - PS Initialization is complete. 
+20:40:05.327 INFO  - Project zybo_video_demo_hw_platform's source hardware specification located at C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+20:49:19.799 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.xml into \zybo_video_demo_hw_platform\system.xml. 
+20:49:19.802 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+20:49:19.826 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.c into \zybo_video_demo_hw_platform\ps7_init.c. 
+20:49:19.827 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.h into \zybo_video_demo_hw_platform\ps7_init.h. 
+20:49:19.905 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.html into \zybo_video_demo_hw_platform\ps7_init.html. 
+20:49:19.906 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\ps7_init.tcl into \zybo_video_demo_hw_platform\ps7_init.tcl. 
+20:49:20.125 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:49:22.039 INFO  - Updating hardware inferred compiler options for filterdemo. 
+20:49:22.040 INFO  - Clearing existing target manager status. 
+20:49:22.041 INFO  - Closing and re-opening the MSS file of ther project filterdemo_bsp 
+20:49:23.196 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+20:49:34.051 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+20:49:35.879 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+20:51:23.186 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+20:51:40.269 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+20:51:57.550 INFO  - Processor reset is completed for ps7_cortexa9_0 
+20:51:57.807 INFO  - PS initialization will be done as it is not done before. 
+20:51:57.807 INFO  - Running PS initialization.... 
+20:52:15.268 INFO  - ps7_init is completed. 
+20:52:15.837 INFO  - ps7_post_config is completed. 
+20:52:16.078 INFO  - PS Initialization is complete. 
+20:59:46.654 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+21:00:17.011 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+21:00:26.212 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+21:06:27.342 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+21:24:11.740 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+21:32:02.249 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 
+21:32:12.130 INFO  - FPGA configured successfully with bitstream "C:/sam_work/EDK_projects/zybo_video_demo/SDK/SDK_Workspace_home/zybo_video_demo_hw_platform/system.bit" 
+21:32:30.773 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:32:41.673 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+21:32:49.797 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:32:50.996 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+21:33:00.321 WARN  - Terminating existing sessions on processor ps7_cortexa9_0 
+21:33:11.380 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:33:12.579 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+21:33:37.088 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:08:53.775 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+23:09:27.147 INFO  - Copied contents of C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Export\hw\system.bit into \zybo_video_demo_hw_platform\system.bit. 

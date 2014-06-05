@@ -1,0 +1,6 @@
+23:09:27 **** Auto Build of project filterdemo_bsp ****
+make -k all 
+'Finished building libraries'
+
+23:09:27 Build Finished (took 240ms)
+

@@ -1,0 +1,156 @@
+Mapping logical library work (line 1) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 2) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 3) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 4) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 5) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 6) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 7) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 8) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 9) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 10) to current logical library
+video_out_v1_00_a ...
+Mapping logical library work (line 11) to current logical library
+video_out_v1_00_a ...
+Parsing XST project file successfully ...
+Analyzing HDL source files ...
+Analyzing HDL source files successfully ...
+HDL language for the peripheral (top level) design unit video_out is vhdl ...
+INFO:EDK:3391 - Create temporary xst project file:
+   D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out.prj
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/TWICtl.vhd" in
+Library video_out_v1_00_a.
+Entity <TWICtl> compiled.
+Entity <TWICtl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/TMDSEncoder.vhd"
+in Library video_out_v1_00_a.
+Entity <TMDSEncoder> compiled.
+Entity <TMDSEncoder> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/SerializerN_1.vhd" in Library
+video_out_v1_00_a.
+Entity <SerializerN_1> compiled.
+Entity <SerializerN_1> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/Video.vhd" in
+Library video_out_v1_00_a.
+Package <Video> compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/LocalRst.vhd" in
+Library video_out_v1_00_a.
+Entity <LocalRst> compiled.
+Entity <LocalRst> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/dcm7.vhd" in
+Library video_out_v1_00_a.
+Entity <dcm7> compiled.
+Entity <dcm7> (Architecture <xilinx>) compiled.
+Compiling vhdl file
+"D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/VideoTimingCtl.vhd" in Library
+video_out_v1_00_a.
+Entity <VideoTimingCtl> compiled.
+Entity <VideoTimingCtl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file
+"D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/DVITransmitter.vhd" in Library
+video_out_v1_00_a.
+Entity <DVITransmitter> compiled.
+Entity <DVITransmitter> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/hdmi_ddc_r.vhd"
+in Library video_out_v1_00_a.
+Entity <hdmi_ddc_r> compiled.
+Entity <hdmi_ddc_r> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/cec_ctrl.vhd" in
+Library video_out_v1_00_a.
+Entity <cec_ctrl> compiled.
+Entity <cec_ctrl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "D:/Digilent/Projects/Zybo/HDMI_CEC_VGA_Out/video_out.vhd"
+in Library video_out_v1_00_a.
+Entity <video_out> compiled.
+Entity <video_out> (Architecture <Behavioral>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = video_out
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+WARNING:EDK:3590 - Unable to delete temporary project file
+   D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores\video_out.prj : 13
+Copying file Video.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file TWICtl.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file TMDSEncoder.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file SerializerN_1.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file LocalRst.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file VideoTimingCtl.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file hdmi_ddc_r.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file DVITransmitter.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file dcm7.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file cec_ctrl.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+Copying file video_out.vhd to
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores/video_out_v1_00_a/hdl/vhdl/
+...
+
+Thank you for using Create and Import Peripheral Wizard! Please find your
+imported peripheral under
+D:\Digilent\Projects\Zybo\ZyBo_Verification\pcores\video_out_v1_00_a.
+
+Summary:
+
+  Logical library     : video_out_v1_00_a
+  Version             : 1.00.a
+  Bus interface(s)    : None
+
+The following sub-directories will be created:
+
+  - video_out_v1_00_a\data
+  - video_out_v1_00_a\hdl
+  - video_out_v1_00_a\hdl\verilog
+  - video_out_v1_00_a\hdl\vhdl
+
+
+The following HDL source files will be copied into the
+video_out_v1_00_a\hdl\vhdl directory:
+
+  - Video.vhd
+  - TWICtl.vhd
+  - TMDSEncoder.vhd
+  - SerializerN_1.vhd
+  - LocalRst.vhd
+  - VideoTimingCtl.vhd
+  - hdmi_ddc_r.vhd
+  - DVITransmitter.vhd
+  - dcm7.vhd
+  - cec_ctrl.vhd
+  - video_out.vhd
+
+The following files will be created under the video_out_v1_00_a\data directory:
+
+  - video_out_v2_1_0.mpd
+  - video_out_v2_1_0.pao
+
+

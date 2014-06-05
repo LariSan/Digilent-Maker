@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="zybo_video_demo_hw_platform-bmmFile"/>
+	<item value="C:\sam_work\EDK_projects\zybo_video_demo\SDK\SDK_Workspace_home\zybo_video_demo_hw_platform\system.bit" key="zybo_video_demo_hw_platform-bitFile"/>
+</section>

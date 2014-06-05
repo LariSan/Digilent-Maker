@@ -1,0 +1,7 @@
+17:07:49 **** Clean-only build of configuration Debug for project video_demo ****
+make clean 
+rm -rf  ./src/color_space.o ./src/helloworld.o ./src/linear_filter.o ./src/platform.o  ./src/color_space.d ./src/helloworld.d ./src/linear_filter.d ./src/platform.d  video_demo.elf.size  video_demo.elf
+' '
+
+17:07:49 Build Finished (took 186ms)
+
